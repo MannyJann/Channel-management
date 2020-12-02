@@ -24,12 +24,3 @@ list_photo_caption = []
 
 
 loop = asyncio.get_event_loop()
-
-aiogram_redis = {
-    'host': ip,
-}
-
-redis = {
-    'address': (ip, 6379),
-    'encoding': 'utf8'
-}
