@@ -8,16 +8,14 @@ load_dotenv()
 BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
 
 admins = [
-    872264536
-    # os.getenv("ADMIN_ID"),
-    # os.getenv("ADMIN_ID2")
+    "ADMIN_ID"
 ]
 
-channel_s = ["-1001473640888"]
+channel_s = ["CHANNELS_ID"]
 
 ip = os.getenv("ip")
 
-list_times = []  # В этот список будет добавляться переменная times_message[0, 1,...]
+list_times = []  # to this list will add var times_message[0, 1,...]
 
 list_post = []
 
