@@ -1,11 +1,13 @@
+from utils.bot_commands import set_default_commands
+
+
 async def on_startup(dp):
-    import filters
     import middlewares
-    filters.setup(dp)
     middlewares.setup(dp)
 
     from utils.notify_admins import on_startup_notify
     await on_startup_notify(dp)
+    await set_default_commands(dp)
 
 
 if __name__ == '__main__':
